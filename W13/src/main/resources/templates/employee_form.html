@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			mini project
+		</title>
+	</head>
+	
+	<body>
+		<form action="save_employee"  th:object="${employee}"  method="post">
+			<p>
+				<input type="text"  placeholder="enter name"   th:field="*{name}">
+			</p>
+			
+			<p>
+							<input type="text"  placeholder="enter company"   th:field="*{company}">
+						</p>
+						<p>
+										<input type="number"  placeholder="enter salary"   th:field="*{salary}">
+									</p>
+									
+									
+									<p>
+													<input type="submit"    value="Save Employee">
+												</p>
+		</form>
+	</body>
+</html>

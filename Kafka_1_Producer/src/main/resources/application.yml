@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Kafka_1
+  kafka:
+    bootstrap-servers:
+    - localhost:11000
+    producer: 
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      
+server:
+ port: 9090
+topic:
+ name: TopicX

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: S8_Oauth
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23li9MmOtDXUaAUNEI
+            client-secret: 860f21f9b015228d3515532dd4c0c48afb74adfc
+server:
+  port: 9090
+

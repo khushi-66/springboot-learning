@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: M16_Spring_Security
+  security:
+    user:
+      name: khushi
+      password: K@123
+server:
+  port: 9090

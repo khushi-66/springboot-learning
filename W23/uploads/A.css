@@ -1,0 +1,15 @@
+
+p{
+    border: 2px solid rgb(95, 61, 61);
+    border-bottom: 5px solid rgb(95, 61, 61);
+     border-top: 2px solid rgb(95, 61, 61);
+      border-left: 7px solid rgb(95, 61, 61);
+       border-right: 3px solid rgb(95, 61, 61);
+    padding: 100px;
+    margin: 30px;
+    background-color: antiquewhite;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+    height:200px;
+}

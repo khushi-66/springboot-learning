@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+      const createMethods={
+            hello:function(){
+                console.log("hello Javascript...");
+             },
+
+            showInfo:function(){
+      console.log("Student Information :");
+      console.log(`name  : ${this.name}`);
+      console.log(`age  : ${this.age}`);
+      console.log(`marks  : ${this.marks}`);
+      console.log(`phone : ${this.phone_number}`);
+      console.log(`Rank  : ${this.rank}`);
+ }}
+
+
+   function  createStudentObject(name,age,phone,marks,rank){
+         const student=Object.create(createMethods);
+         student.name=name;
+         student.age=age;
+          student.phone=phone;
+           student.rank=rank;
+            student.marks=marks;
+          //  student.hello=createMethods.hello;
+          //  student.showInfo=createMethods.showInfo;
+           return student;
+        }
+    
+    const student1=createStudentObject("khushi sahu",22,38946054,567,2);
+    console.log(student1);
+    student1.showInfo();
+    student1.hello();
+    const student2=createStudentObject("shivam tiwari",22,389476876,234,10);
+    console.log(student2);
+    student2.showInfo();
+    student2.hello();
+     </script> 
+</body>
+</html>

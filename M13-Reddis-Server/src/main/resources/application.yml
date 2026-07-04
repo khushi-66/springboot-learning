@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: M13-Reddis-Server
+  data:
+    redis:
+      url: redis-14004.c265.us-east-1-2.ec2.cloud.redislabs.com
+      port: 14004
+      username: default
+      password: cTN8UMG8q7MwDuFPHPyS1S5bGaKxVL6d
+server:
+  port: 9090

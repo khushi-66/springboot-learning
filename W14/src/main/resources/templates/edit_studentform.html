@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student	Form </title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+	<body>
+		<div  class="container">
+		<div class="row   mt-5  ">
+		<div class="col-2"></div>
+		<div class="col-8">
+	<form    th:action="@{/update_form}"  method="post" th:object="${student}"  >
+	<div  class="mb-3">
+	<label    for="name"class="form-label">Student Name</label>
+	<input type="text"  th:field="*{name}" class="form-control" id="name"     >
+	</div>
+	
+	<input type="hidden"  th:field="*{studentId}"  th:value="${studentId}" class="form-control" >
+	
+	
+	<div  class="mb-3">
+	<label    for="cllg"class="form-label">Student college</label>
+	<input type="text"   th:field="*{college}"  class="form-control" id="cllg"  >
+	</div>
+	<div  class="mb-3">
+	<label    for="degree"class="form-label">Student Degree</label>
+	<input type="text"   th:field="*{degree}"  class="form-control" id="degree"  >
+	</div>
+	<div  class="mb-3">
+	<label    for="marks"class="form-label">Student marks</label>
+	<input type="text"   th:field="*{marks}" class="form-control" id="marks"  >
+	</div>
+	<div  class="mb-3">
+	<label    for="fees"class="form-label">Student Fees</label>
+	<input   type="number"   th:field="*{fees}"class="form-control" id="fees" >
+	</div>
+	<input type="submit"  value="Update"  class="btn btn-primary">
+			</form>
+		</div>
+		<div class="col-2"></div>
+		</div>
+		</div>
+		
+	</body>
+</html>

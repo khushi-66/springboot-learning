@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: S6_Signin_Signup
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/S6db
+  jpa: 
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 9090

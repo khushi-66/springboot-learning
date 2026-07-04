@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: M12-Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/khushi-66/new-config-repo.git
+server:
+  port: 5555

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Kafka_2
+  kafka:
+    bootstrap-servers:
+    - localhost:11000
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    properties: 
+      spring.json.trusted.packages: 'com.isrdc.models'
+      spring.json.value.default.type: 'com.isrdc.models.Employee'
+server:
+  port: 9091
+topic:
+ name: TopicX

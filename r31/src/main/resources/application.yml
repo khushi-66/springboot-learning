@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: r31
+server:
+  port: 9090
+app: 
+ dholakpur:
+   -rajaindraverma
+   -raju
+   -jaggu
+   -kaliya
+   -bheem
+   -churtki
+   -golu
+   -bholu

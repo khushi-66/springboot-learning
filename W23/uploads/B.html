@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hoisting
+
+          //allowed
+        hello();
+        //  function hello(){
+        //     console.log("hello hoisting....");
+        //  }
+
+          //allowed
+        const hello=function(){
+        console.log("hello hoisting....");
+         }
+
+        // Uncaught ReferenceError: Cannot access 'hello' before initialization
+    // at B.html:13:9Understand this error
+    </script>
+</body>
+</html>

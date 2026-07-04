@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: M15_Spring_Security
+server:
+  port: 9090

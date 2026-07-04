@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: M9-A
+server:
+  port: 9090

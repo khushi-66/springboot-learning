@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form validation</title>
+		
+	</head>
+	<body>
+		<form   action="save"   method="post" th:object="${user}">
+	<p> UserName <input type="text" th:field="*{name}" placeholder="Enter Your Name" >
+	  <span th:if="${#fields.hasErrors('name')}"   th:errors="*{name}"   style="color :red;"></span>
+	</p>
+	<p>  Email<input type="email" th:field="*{email}" placeholder="Enter Your Email" ></p>
+	<p>   Age<input type="number" th:field="*{age}" placeholder="Enter Your Age" ></p>
+	<p>   Phone <input type="text" th:field="*{phone}" placeholder="Enter Your Phone" ></p>
+	<p><input type="submit" value="Save User"></p>
+</form>
+	</body>
+</html>

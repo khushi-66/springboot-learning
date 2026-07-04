@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Form Validation
+		</title>
+	</head>
+	<body>
+		<form  action="save_form"  th:object="${user}" method="post">
+<P><input type="text" placeholder="Enter Your Name"  th:field="*{name}">
+<span   th:if="${#fields.hasErrors('name')}"   th:errors="*{name}"   style="color: crimson;"></span></P>
+			
+<P><input type="text" placeholder="Enter Your Email"th:field="*{email}">
+	<span   th:if="${#fields.hasErrors('email')}"   th:errors="*{email}"   style="color: crimson;"></span></P>
+		</P>
+		
+		<P><input type="number" placeholder="Enter Your Rank"th:field="*{rank}">
+			<span   th:if="${#fields.hasErrors('rank')}"   th:errors="*{rank}"   style="color: crimson;"></span></P>
+				</P>
+		
+	<P><input type="number" placeholder="Enter Your age"  th:field="*{age}" >
+		<span   th:if="${#fields.hasErrors('age')}"   th:errors="*{age}"   style="color: crimson;"></span></P>
+			</P>
+			
+			<P><input type="text" placeholder="Enter Your phone" th:field="*{phone}" >
+				<span   th:if="${#fields.hasErrors('phone')}"   th:errors="*{phone}"   style="color: crimson;"></span></P>
+					</P>
+			<P>
+				M<input type="radio" value="M"th:field="*{gender}" > &nbsp;&nbsp;
+				F<input type="radio" value="F" th:field="*{gender}" >
+				<span   th:if="${#fields.hasErrors('gender')}"   th:errors="*{gender}"   style="color: crimson;"></span></P>
+				</P>
+				<input type="submit" value="Save"></P>
+		</form>
+	</body>
+</html>

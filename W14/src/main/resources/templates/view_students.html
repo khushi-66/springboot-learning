@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			example W14
+		</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+	</head>
+	<body>
+<div class="container">
+	<div class="row   text-center  mt-4">
+	<div class="col">All  Student Data
+		<table   class="table   mt-4  table-bordered  ">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>college</th>
+					<th>Degree</th>
+					<th>Marks</th>
+					<th>Fees</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr   th:each="student:${students}">
+					<td   th:text="${student.name}"></td>
+					<td  th:text="${student.college}"></td>
+					<td th:text="${student.degree}"></td>
+					<td th:text="${student.marks}"></td>
+					<td th:text="${student.fees}"></td>
+					<td  ><a  th:href="@{/delete/{id}(id=${student.studentId})}"   class="btn btn-danger">Delete</a></td>
+				    <td><a th:href="@{/show_editform/{id}(id=${student.studentId})}"   class="btn btn-secondary">Edit </a></td>
+				</tr>
+			</tbody>
+		</table>			
+	</div>
+</div>
+</div>
+		
+	</body>
+</html>
