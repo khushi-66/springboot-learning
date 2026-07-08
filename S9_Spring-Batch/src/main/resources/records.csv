@@ -1,0 +1,14 @@
+empid,name,email,password,phone,city,salary
+1,khushi,khushi@gmail.com,1234,9876543210,pune,50000
+2,rahul,rahul@gmail.com,abcd,9876543211,mumbai,60000
+3,amit,amit@gmail.com,xyz,9876543212,delhi,55000
+4,neha,neha@gmail.com,pass123,9876543213,indore,48000
+5,arjun,arjun@gmail.com,arj@123,9876543214,bhopal,52000
+6,pooja,pooja@gmail.com,poo@321,9876543215,nagpur,47000
+7,rohit,rohit@gmail.com,roh@111,9876543216,delhi,61000
+8,sneha,sneha@gmail.com,sne@222,9876543217,pune,53000
+9,karan,karan@gmail.com,kar@333,9876543218,mumbai,58000
+10,anjali,anjali@gmail.com,anj@444,9876543219,jaipur,49000
+11,vikas,vikas@gmail.com,vik@555,9876543220,chennai,62000
+12,meena,meena@gmail.com,mee@666,9876543221,kolkata,51000
+13,raj,raj@gmail.com,raj@777,9876543222,surat,55000
